@@ -571,3 +571,156 @@ function openQuoteEmail() {
         afterClip.style.width = '50%';
         handle.style.left = '50%';
     })();
+
+  // Wait for DOM to be ready
+  document.addEventListener('DOMContentLoaded', function() {
+
+    // --- Quote form handler ---
+    window.submitQuoteForm = function(e) {
+      e.preventDefault();
+      // ... your existing logic ...
+      document.getElementById('quote-form').classList.add('hidden');
+      document.getElementById('quote-success').classList.remove('hidden');
+    };
+
+    // --- Service details toggle ---
+    window.toggleServiceDetails = function(service) {
+      const details = document.getElementById(service + '-details');
+      const icon = document.getElementById(service + '-icon');
+      if (details.classList.contains('hidden')) {
+        details.classList.remove('hidden');
+        icon.classList.add('rotate-45');
+      } else {
+        details.classList.add('hidden');
+        icon.classList.remove('rotate-45');
+      }
+    };
+
+    // --- Slider functionality ---
+    const sliderContainer = document.getElementById('slider-container');
+    const afterClip = document.getElementById('after-clip');
+    const handle = document.getElementById('slider-handle');
+    let isDragging = false;
+
+    function updateSlider(x) {
+      const rect = sliderContainer.getBoundingClientRect();
+      let pos = (x - rect.left) / rect.width;
+      pos = Math.min(Math.max(pos, 0), 1);
+      afterClip.style.width = (pos * 100) + '%';
+      handle.style.left = (pos * 100) + '%';
+    }
+
+    sliderContainer.addEventListener('mousedown', function(e) {
+      isDragging = true;
+      updateSlider(e.clientX);
+    });
+    window.addEventListener('mousemove', function(e) {
+      if (isDragging) updateSlider(e.clientX);
+    });
+    window.addEventListener('mouseup', function() {
+      isDragging = false;
+    });
+    sliderContainer.addEventListener('touchstart', function(e) {
+      e.preventDefault();
+      isDragging = true;
+      updateSlider(e.touches[0].clientX);
+    });
+    sliderContainer.addEventListener('touchmove', function(e) {
+      e.preventDefault();
+      if (isDragging) updateSlider(e.touches[0].clientX);
+    });
+    sliderContainer.addEventListener('touchend', function() {
+      isDragging = false;
+    });
+
+    // --- File input label update ---
+    const fileInput = document.getElementById('quote-file');
+    if (fileInput) {
+      fileInput.addEventListener('change', function() {
+        const names = Array.from(this.files).map(f => f.name).join(', ');
+        document.getElementById('file-names').textContent = names ? 'Selected: ' + names : '';
+      });
+    }
+
+    // --- Portfolio data & filtering ---
+    const portfolioItems = [
+      { id: 1, title: 'Modern Living Room', category: 'Living Room', img: 'https://jsstaging.com.au/wp-content/uploads/2026/07/IMG-20260702-WA0023.jpg' },
+		
+      { id: 2, title: ' Bedroom', category: 'Bedroom', img: 'https://jsstaging.com.au/wp-content/uploads/2026/07/IMG-20260702-WA0013.jpg' },
+				{ id: 3, title: 'Elegant Dining', category: 'Dining', img: 'https://jsstaging.com.au/wp-content/uploads/2026/06/file_000000007578720b8e0563b2efdae4d4.jpg.jpeg' },
+		
+		      { id: 4, title: 'Modern Living Room', category: 'Living Room', img: 'https://jsstaging.com.au/wp-content/uploads/2026/07/IMG-20260702-WA0012.jpg' },
+		
+		{ id: 5, title: ' Bedroom', category: 'Bedroom', img: 'https://jsstaging.com.au/wp-content/uploads/2026/07/IMG-20260702-WA0004.jpg' },
+		
+      { id: 6, title: 'Elegant Dining', category: 'Dining', img: 'https://jsstaging.com.au/wp-content/uploads/2026/07/IMG-20260702-WA0015.jpg' },
+
+      // Add more items as needed
+    ];
+
+    const grid = document.getElementById('portfolio-grid');
+
+    function renderPortfolio(category) {
+      const filtered = category === 'all' ? portfolioItems : portfolioItems.filter(item => item.category === category);
+      grid.innerHTML = filtered.map(item => `
+        <div class="group relative overflow-hidden rounded-xl shadow-md bg-white border border-gray-100">
+          <img src="${item.img}" loading="lazy" alt="${item.title}" class="w-full h-60 object-cover transition-transform duration-700 group-hover:scale-105">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+            <p class="text-white font-display text-xs font-bold uppercase tracking-widest">${item.title}</p>
+          </div>
+        </div>
+      `).join('');
+    }
+
+    window.filterPortfolio = function(category) {
+      renderPortfolio(category);
+      // Update active button style if needed
+      document.querySelectorAll('#portfolio .flex-wrap button').forEach(btn => {
+        btn.classList.remove('bg-luxury-charcoal', 'text-luxury-cream');
+        btn.classList.add('bg-white', 'text-luxury-charcoal');
+      });
+      event.target.classList.remove('bg-white', 'text-luxury-charcoal');
+      event.target.classList.add('bg-luxury-charcoal', 'text-luxury-cream');
+    };
+
+    renderPortfolio('all');
+
+    // --- Testimonials ---
+    const testimonials = [
+      { text: "Our Wollert property looked much larger and brighter after staging. The furniture selection was perfect for the space.Excellent home staging service in Melbourne.Highly recommended.", author: "AYAT A, Homeowner" },
+      { text: "Company did an incredible job staging our home for sale. The space looked beautiful, welcoming and appealing to buyers. Professional, reliable and talented—I highly recommend their servicesThank you so much.", author: "Abrar Maj, Homeowner" },
+      { text: "Professional, reliable and great communication skills! Our craigieburn home looked amazing and modern after staging. We will definitely get in contact if we sell our current home. Thank you again!.", author: "Ella M., Vendor" }
+    ];
+
+    let currentTestimonial = 0;
+    const contentEl = document.getElementById('testimonial-content');
+    const counterEl = document.getElementById('testimonial-counter');
+
+    function showTestimonial(index) {
+      const t = testimonials[index];
+      contentEl.innerHTML = `
+        <p class="text-base sm:text-lg text-gray-700 font-serif italic leading-relaxed">“${t.text}”</p>
+        <p class="text-xs font-display font-bold uppercase tracking-widest text-luxury-gold">— ${t.author}</p>
+      `;
+      counterEl.textContent = `${index + 1} / ${testimonials.length}`;
+    }
+
+    window.nextTestimonial = function() {
+      currentTestimonial = (currentTestimonial + 1) % testimonials.length;
+      showTestimonial(currentTestimonial);
+    };
+
+    window.prevTestimonial = function() {
+      currentTestimonial = (currentTestimonial - 1 + testimonials.length) % testimonials.length;
+      showTestimonial(currentTestimonial);
+    };
+
+    showTestimonial(0);
+
+    // --- Modal placeholder (if you have one) ---
+    window.openQuoteModal = function() {
+      // If you have a modal, show it; otherwise scroll to form
+      document.querySelector('#home .lg\\:col-span-6').scrollIntoView({ behavior: 'smooth' });
+    };
+
+  });
