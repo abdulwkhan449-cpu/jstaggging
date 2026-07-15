@@ -1,0 +1,1542 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>JS Staging - Professional Home Staging Melbourne</title>
+    <meta name="description" content="Learn about JS Staging - Melbourne's trusted home staging professionals.">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500&family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Montserrat', 'ui-sans-serif', 'system-ui', '-apple-system', 'sans-serif'],
+                        display: ['Montserrat', 'sans-serif'],
+                        serif: ['Cormorant Garamond', 'serif'],
+                    },
+                    colors: {
+                        'luxury-cream': '#FAF9F5',
+                        'luxury-beige': '#EFE9DF',
+                        'luxury-gold': '#8C7E6E',
+                        'luxury-gold-dark': '#6E6152',
+                        'luxury-charcoal': '#111111',
+                        'luxury-sand': '#F5EFE4',
+                        'luxury-slate': '#2A2521',
+                    },
+                }
+            }
+        }
+    </script>
+
+    <style>
+        * { margin:0; padding:0; box-sizing:border-box; }
+        body { background-color:#FAF9F5; color:#111111; font-family:'Montserrat', ui-sans-serif, system-ui, sans-serif; overflow-x:hidden; }
+        /* ... your other CSS rules ... */
+
+    </style>
+
+    <?php wp_head(); ?>
+	
+	<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-WTVCD95J');</script>
+<!-- End Google Tag Manager -->
+</head>
+
+<body >
+	
+	<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WTVCD95J"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) --> 
+
+<!-- Sabse upar ek wrapper div lagayi hai jo fixed rahegi -->
+<header class="fixed top-0 left-0 w-full z-[100] shadow-md mar">
+
+    <!-- TOP BAR - Ab ye fixed container ke andar hai -->
+    <div class="bg-luxury-charcoal text-luxury-cream text-xs py-2 px-6 flex justify-between items-center tracking-widest uppercase font-display border-b border-luxury-slate/30">
+        <div class="flex items-center gap-6">
+            <a href="tel:0434363874" class="flex items-center gap-2 hover:text-luxury-gold transition-colors">
+                <svg class="w-3.5 h-3.5 text-luxury-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                </svg>
+                <span>0417829971</span>
+            </a>
+            <a href="mailto:enquiries@jsstaging.com.au" class="hidden sm:flex items-center gap-2 hover:text-luxury-gold transition-colors">
+                <svg class="w-3.5 h-3.5 text-luxury-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                </svg>
+                <span>info@jsstaging.com.au</span>
+            </a>
+        </div>
+        <div class="flex items-center gap-4">
+            <span class="text-[10px] text-gray-400">Melbourne's Trusted Staging Team</span>
+        </div>
+    </div>
+
+
+
+    <!-- MAIN NAV - position static remove kar di gayi hai -->
+    <nav class="w-full transition-all duration-300 bg-luxury-cream py-6 px-6 md:px-12 flex items-center" id="main-nav">
+       <a href="./index.html" class="flex items-center gap-2 group mr-auto">
+    <img src="https://jsstaging.com.au/wp-content/uploads/2025/10/cropped-IMG_20251001_204636-1.png" 
+         alt="JS STAGING" 
+         class="h-12 w-auto">
+</a>
+
+        <!-- Desktop menu -->
+        <div class="hidden lg:flex items-center gap-12 font-display text-sm tracking-widest uppercase font-medium">
+            <a href="./index.html" class="<?php echo is_active_page(['home']) ? 'text-luxury-gold border-b-2 border-luxury-gold' : 'text-luxury-charcoal hover:text-luxury-gold transition-colors'; ?> relative py-2 group">
+                Home
+                <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-luxury-gold transition-all duration-300 group-hover:w-full"></span>
+            </a>
+			<a href="./About.html" class="<?php echo is_active_page(['about','about']) ? 'text-luxury-gold border-b-2 border-luxury-gold' : 'text-luxury-charcoal hover:text-luxury-gold transition-colors'; ?> relative py-2 group">
+                About 
+                <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-luxury-gold transition-all duration-300 group-hover:w-full"></span>
+            </a>
+            <div class="relative group py-2">
+                <a href="./service.html" class="<?php echo is_active_page(['service', 'services']) ? 'text-luxury-gold' : 'text-luxury-charcoal hover:text-luxury-gold transition-colors'; ?> relative flex items-center gap-1">
+                    Services
+                    <svg class="w-3 h-3 transition-transform duration-200 group-hover:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                    </svg>
+                </a>
+                <div class="absolute left-0 top-full mt-1 w-64 bg-white shadow-xl rounded-lg border border-gray-100 opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 transform -translate-y-1 group-hover:translate-y-0 z-50">
+                    <ul class="py-1 text-xs font-display uppercase tracking-widest">
+                        <li><a href="./personal-styling-service.html" class="block px-5 py-2.5 hover:bg-luxury-sand hover:text-luxury-gold transition-colors">Personal Styling Services</a></li>
+                        <li><a href="./partial-property-stagging.html" class="block px-5 py-2.5 hover:bg-luxury-sand hover:text-luxury-gold transition-colors">Partial Property Staging</a></li>
+                        <li><a href="./full-property-stagging.html" class="block px-5 py-2.5 hover:bg-luxury-sand hover:text-luxury-gold transition-colors">Full Property Staging</a></li>
+                    </ul>
+                </div>
+            </div>
+            <a href="./gallery.html" class="<?php echo is_active_page(['Gallery']) ? 'text-luxury-gold border-b-2 border-luxury-gold' : 'text-luxury-charcoal hover:text-luxury-gold transition-colors'; ?> relative py-2 group">
+                Gallery
+                <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-luxury-gold transition-all duration-300 group-hover:w-full"></span>
+            </a>
+            <a href="./contact.html " class="<?php echo is_active_page(['contact', 'contact-us']) ? 'text-luxury-gold border-b-2 border-luxury-gold' : 'text-luxury-charcoal hover:text-luxury-gold transition-colors'; ?> relative py-2 group">
+                Contact Us
+                <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-luxury-gold transition-all duration-300 group-hover:w-full"></span>
+            </a>
+        </div>
+
+       <div class="flex items-center gap-4 ml-8">
+<!-- Navbar "Get a Quote" - Works on ALL devices -->
+<button onclick="openQuoteEmail()" 
+    class="hidden sm:flex items-center gap-2 bg-luxury-charcoal text-luxury-cream hover:bg-luxury-gold hover:text-white px-5 py-2.5 rounded-full font-display font-semibold text-xs tracking-wider uppercase transition-all duration-300 shadow-sm group cursor-pointer border-0">
+    Get a Quote
+    <svg class="w-3.5 h-3.5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+    </svg>
+</button>
+
+<!-- Mobile hamburger toggle - opens slide-in mobile menu -->
+<button type="button"
+    onclick="toggleMobileMenu()"
+    aria-label="Open menu"
+    aria-controls="mobile-menu"
+    class="lg:hidden flex items-center justify-center w-10 h-10 text-luxury-charcoal hover:text-luxury-gold transition-colors cursor-pointer border-0 bg-transparent">
+    <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+    </svg>
+</button>
+</div>
+        
+    </nav>
+	<!-- MOBILE MENU -->
+<div id="mobile-menu"
+    class="fixed top-0 right-0 w-[80vw] max-w-[380px] h-full bg-luxury-cream shadow-2xl z-[110] p-8 flex flex-col justify-between lg:hidden transform translate-x-full transition-transform duration-300 overflow-y-auto">
+    
+    <div>
+        <!-- Header -->
+        <div class="flex justify-between items-center mb-12">
+            <div class="flex flex-col">
+                <span class="font-serif text-3xl font-extrabold tracking-tight text-luxury-charcoal leading-none">JS</span>
+                <span class="text-[9px] tracking-[0.3em] text-luxury-gold font-bold uppercase leading-none mt-1">STAGING</span>
+            </div>
+            <button onclick="toggleMobileMenu()" class="text-luxury-charcoal hover:text-luxury-gold p-1">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button>
+        </div>
+
+        <!-- Menu Items -->
+        <div class="flex flex-col gap-6 font-display font-medium uppercase tracking-widest text-base mt-10">
+            <a href="./index.html" onclick="toggleMobileMenu()" class="<?php echo is_active_page(['home']) ? 'text-luxury-gold' : 'text-luxury-charcoal hover:text-luxury-gold'; ?> transition-colors py-1 block border-b border-gray-100">Home</a>
+
+            <a href="./About.html" onclick="toggleMobileMenu()" class="<?php echo is_active_page(['about', 'about-us']) ? 'text-luxury-gold' : 'text-luxury-charcoal hover:text-luxury-gold'; ?> transition-colors py-1 block border-b border-gray-100">About Us</a>
+
+            <!-- ====== FIXED SERVICES BLOCK ====== -->
+            <div class="border-b border-gray-100 py-1">
+                <!-- Button stays directly before the <ul> so nextElementSibling works -->
+                <button onclick="toggleMobileSubmenu(this)" class="flex items-center justify-between w-full <?php echo is_active_page(['service', 'services']) ? 'text-luxury-gold' : 'text-luxury-charcoal hover:text-luxury-gold'; ?> transition-colors text-left">
+                    <span>Services</span>
+                    <svg class="w-4 h-4 transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7" />
+                    </svg>
+                </button>
+                <!-- Submenu is DIRECT next sibling -->
+                <ul class="mt-3 space-y-3 text-xs tracking-widest font-medium pl-4 hidden" id="services-submenu">
+                    <!-- ✅ NEW: Main Services page link -->
+                    <li><a href="./service.html" onclick="toggleMobileMenu()" class="hover:text-luxury-gold transition-colors block font-semibold text-luxury-charcoal">All Services</a></li>
+                    <li><a href="./personal-styling-service.html" onclick="toggleMobileMenu()" class="hover:text-luxury-gold transition-colors block">Personal Styling Services</a></li>
+                    <li><a href="./partial-property-stagging.html" onclick="toggleMobileMenu()" class="hover:text-luxury-gold transition-colors block">Partial Property Staging</a></li>
+                    <li><a href="./full-property-stagging.html" onclick="toggleMobileMenu()" class="hover:text-luxury-gold transition-colors block">Full Property Staging</a></li>
+                </ul>
+            </div>
+            <!-- ====== END FIXED SERVICES ====== -->
+
+            <a href="./gallery.html" onclick="toggleMobileMenu()" class="<?php echo is_active_page(['gallery']) ? 'text-luxury-gold' : 'text-luxury-charcoal hover:text-luxury-gold'; ?> transition-colors py-1 block border-b border-gray-100">Gallery</a>
+
+            <a href="./contact.html" onclick="toggleMobileMenu()" class="<?php echo is_active_page(['contact', 'contact-us']) ? 'text-luxury-gold' : 'text-luxury-charcoal hover:text-luxury-gold'; ?> transition-colors py-1 block border-b border-gray-100">Contact Us</a>
+        </div>
+
+        <!-- Bottom actions -->
+        <div class="flex flex-col gap-4 mt-8">
+            <button onclick="openQuoteEmail()" 
+    class="flex items-center justify-center gap-2 bg-luxury-charcoal text-luxury-cream hover:bg-luxury-gold hover:text-white px-5 py-2.5 rounded-full font-display font-semibold text-xs tracking-wider uppercase transition-all duration-300 shadow-sm group cursor-pointer border-0 w-full">
+    <span>Get a Quote</span>
+    <svg class="w-3.5 h-3.5 flex-shrink-0 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+    </svg>
+</button>
+		</div>
+          <a href="tel:0434363874" class="flex items-center justify-center gap-2 text-xs text-gray-500 font-display uppercase tracking-widest mt-2 hover:text-luxury-gold transition-colors">
+  <svg class="w-3.5 h-3.5 text-luxury-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+  </svg>
+  <span>0434363874</span>
+</a>
+        
+    </div>
+</div>
+
+<!-- Mobile overlay - Isko bhi fixed kiya gaya hai -->
+<div id="mobile-overlay" class="fixed inset-0 bg-black/60 z-[105] lg:hidden hidden" onclick="toggleMobileMenu()"></div>
+</header>
+
+
+
+
+
+
+<!-- ============================================ -->
+<!-- HERO SECTION                                -->
+<!-- ============================================ -->
+<section id="home" class="relative min-h-[90vh] flex items-center justify-center py-16 lg:py-24 overflow-hidden bg-luxury-charcoal mt-20">
+  <div class="absolute inset-0 z-0">
+    <!-- Responsive image with srcset and lazy loading -->
+    <img
+      src="https://jsstaging.com.au/wp-content/uploads/2025/10/IMG_1439-1-scaled.jpg"
+      srcset="https://jsstaging.com.au/wp-content/uploads/2025/10/IMG_1439-1-800x800.jpg 800w,
+              https://jsstaging.com.au/wp-content/uploads/2025/10/IMG_1439-1-scaled.jpg 1200w"
+      sizes="(max-width: 800px) 100vw, 1200px"
+      loading="lazy"
+      alt="Staged Living Room with modern furniture"
+      class="w-full h-full object-cover object-center opacity-30 scale-105 filter saturate-[0.85]"
+    >
+    <div class="absolute inset-0 bg-gradient-to-r from-luxury-slate via-luxury-slate/95 to-transparent md:bg-gradient-to-r"></div>
+    <div class="absolute inset-0 bg-gradient-to-t from-luxury-slate via-transparent to-transparent opacity-90"></div>
+  </div>
+
+  <div class="container mx-auto px-6 md:px-12 relative z-10 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+    <div class="lg:col-span-6 flex flex-col items-start text-left text-luxury-cream mt-10">
+      <div class="flex items-center gap-2 px-4 py-1.5 bg-luxury-gold/20 border border-luxury-gold/40 text-luxury-beige text-xs uppercase tracking-[0.25em] font-bold font-display mb-6 rounded-full shadow-sm">
+        <svg class="w-3 text-luxury-beige" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/></svg>
+        <span>Melbourne's Trusted Home Staging Team</span>
+      </div>
+
+      <h1 class="font-serif text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-white mb-6 leading-[1.12]">
+        Home Staging That <br class="hidden sm:inline"><span class="text-luxury-beige italic">Sells Your Home</span><br>Faster
+      </h1>
+
+      <p class="text-base sm:text-lg text-gray-300 max-w-xl leading-relaxed mb-8 font-sans font-light">
+        At JS Staging, we help you present your property in the best possible light. Our professional team works with you to create warm, inviting spaces that buyers love — without breaking the bank.
+      </p>
+
+      <div class="flex flex-wrap gap-4 items-center mb-10">
+        <!-- Option 1: Using <a> tag (semantically correct) -->
+<button id="quoteBtn" class="group flex items-center gap-2.5 bg-luxury-cream hover:bg-luxury-gold text-luxury-charcoal hover:text-white px-7 py-4 font-display font-bold text-xs uppercase tracking-widest rounded-full transition-all duration-300 shadow-xl shadow-black/30 hover:-translate-y-0.5 cursor-pointer" aria-label="Get a free quote">
+    Get a Free Quote
+    <svg class="w-3.5 h-3.5 text-luxury-gold group-hover:text-white transition-colors" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/>
+    </svg>
+</button>
+
+<script>
+document.getElementById('quoteBtn').addEventListener('click', function(e) {
+    var mailtoLink = 'mailto:info@jsstaging.com.au?subject=Free%20Quote%20Request&body=Hi%20there,%0A%0AI%20would%20like%20to%20request%20a%20free%20quote%20for%20my%20project.%0A%0APlease%20find%20my%20details%20below:%0A%0AName:%20%0APhone:%20%0AProject%20details:%20%0A%0AThank%20you.';
+    
+    // Try to open mailto
+    window.location.href = mailtoLink;
+    
+    // If the browser doesn't handle mailto, we offer a webmail fallback after a short delay
+    setTimeout(function() {
+        // If the page is still active (no navigation away from mailto), open Gmail web
+        if (document.hasFocus()) {
+            var gmailCompose = 'https://mail.google.com/mail/?view=cm&fs=1&to=info@jsstaging.com.au&su=Free%20Quote%20Request&body=Hi%20there,%0A%0AI%20would%20like%20to%20request%20a%20free%20quote%20for%20my%20project.%0A%0APlease%20find%20my%20details%20below:%0A%0AName:%20%0APhone:%20%0AProject%20details:%20%0A%0AThank%20you.';
+            window.open(gmailCompose, '_blank');
+        }
+    }, 500);
+});
+</script>
+        <a href="#services" class="text-white border-b border-luxury-gold/60 hover:border-white pb-1.5 text-xs tracking-widest uppercase font-display font-semibold transition-colors">See Our Packages</a>
+      </div>
+
+      <div class="border-t border-white/10 pt-6 w-full max-w-lg">
+        <div class="flex items-center gap-2 text-[10px] text-gray-400 font-display uppercase tracking-widest font-bold mb-3">
+          <svg class="w-3.5 h-3.5 text-luxury-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+          <span>We service all across Melbourne:</span>
+        </div>
+        <div class="flex flex-wrap gap-2">
+          <span class="text-[10px] sm:text-xs font-display font-medium text-gray-300 bg-white/5 border border-white/10 px-3 py-1.5 rounded-full">Craigieburn</span>
+          <span class="text-[10px] sm:text-xs font-display font-medium text-gray-300 bg-white/5 border border-white/10 px-3 py-1.5 rounded-full">Mickleham</span>
+          <span class="text-[10px] sm:text-xs font-display font-medium text-gray-300 bg-white/5 border border-white/10 px-3 py-1.5 rounded-full">Donnybrook</span>
+          <span class="text-[10px] sm:text-xs font-display font-medium text-gray-300 bg-white/5 border border-white/10 px-3 py-1.5 rounded-full">Wollert</span>
+          <span class="text-[10px] sm:text-xs font-display font-medium text-gray-300 bg-white/5 border border-white/10 px-3 py-1.5 rounded-full">Epping</span>
+          <span class="text-[10px] sm:text-xs font-display font-medium text-gray-300 bg-white/5 border border-white/10 px-3 py-1.5 rounded-full">Greenvale</span>
+          <span class="text-[10px] sm:text-xs font-display font-medium text-gray-300 bg-white/5 border border-white/10 px-3 py-1.5 rounded-full">Mernda</span>
+          <span class="text-[10px] sm:text-xs font-display font-medium text-gray-300 bg-white/5 border border-white/10 px-3 py-1.5 rounded-full">Melbourne CBD</span>
+			 <span class="text-[10px] sm:text-xs font-display font-medium text-gray-300 bg-white/5 border border-white/10 px-3 py-1.5 rounded-full">Pascoe Vale South</span>
+			 <span class="text-[10px] sm:text-xs font-display font-medium text-gray-300 bg-white/5 border border-white/10 px-3 py-1.5 rounded-full">Strathmore</span>
+			 <span class="text-[10px] sm:text-xs font-display font-medium text-gray-300 bg-white/5 border border-white/10 px-3 py-1.5 rounded-full">Essendon</span>
+			 <span class="text-[10px] sm:text-xs font-display font-medium text-gray-300 bg-white/5 border border-white/10 px-3 py-1.5 rounded-full">Moonee Ponds</span>
+			 <span class="text-[10px] sm:text-xs font-display font-medium text-gray-300 bg-white/5 border border-white/10 px-3 py-1.5 rounded-full">Reservoir</span>
+			 <span class="text-[10px] sm:text-xs font-display font-medium text-gray-300 bg-white/5 border border-white/10 px-3 py-1.5 rounded-full">Preston</span>
+			 <span class="text-[10px] sm:text-xs font-display font-medium text-gray-300 bg-white/5 border border-white/10 px-3 py-1.5 rounded-full">Coburg</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Quote Form with Upload -->
+<div class="lg:col-span-6 bg-white shadow-2xl relative border-t-4 border-luxury-gold p-6 sm:p-8 rounded-2xl overflow-hidden self-start">
+    <div class="absolute top-0 right-0 w-28 h-28 bg-luxury-gold/5 rounded-bl-full pointer-events-none"></div>
+    <h2 class="font-serif text-2xl md:text-3xl font-extrabold text-luxury-charcoal mb-1">Get a Quick Quote</h2>
+    <p class="text-xs text-gray-500 font-sans leading-relaxed mb-6">Upload your property photos or floor plans for a faster, more accurate estimate.</p>
+    
+   
+</div>
+  </div>
+</section>
+
+<!-- ============================================ -->
+<!-- ABOUT US SECTION                            -->
+<!-- ============================================ -->
+<section id="about" class="bg-luxury-cream py-20 md:py-28 px-6 md:px-12 relative overflow-hidden">
+  <div class="absolute top-1/2 left-0 -translate-y-1/2 w-[400px] h-[400px] bg-luxury-sand/50 rounded-full blur-3xl pointer-events-none"></div>
+  <div class="max-w-5xl mx-auto text-center">
+    <div class="flex items-center justify-center gap-2 text-xs font-display font-semibold tracking-[0.3em] text-luxury-gold uppercase mb-4">
+      <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+      <span>About JS Staging</span>
+    </div>
+    <h2 class="font-serif text-3xl sm:text-4xl md:text-5xl font-black text-luxury-charcoal mb-8 leading-tight">
+      We Help Melbourne Homes <br><span class="text-luxury-gold-dark italic font-normal">Look Their Best</span>
+    </h2>
+    <div class="max-w-3xl mx-auto">
+      <p class="text-base sm:text-lg text-gray-600 leading-relaxed font-sans font-light mb-6">
+       We specialise in staging in the Northern suburbs. Our warm stylish staging is tailored to fit your property and enhances it's appeal.
+
+We provide competitive prices while delivering the best quality and unique furniture selections that leave a lasting impression.
+      </p>
+     
+      <div class="flex flex-wrap justify-center gap-6 text-sm text-gray-500">
+        <div class="flex items-center gap-2"><svg class="w-4 h-4 text-luxury-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg> <span>Affordable packages</span></div>
+        <div class="flex items-center gap-2"><svg class="w-4 h-4 text-luxury-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg> <span>Friendly, local team</span></div>
+        <div class="flex items-center gap-2"><svg class="w-4 h-4 text-luxury-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg> <span>Fast turnaround</span></div>
+        <div class="flex items-center gap-2"><svg class="w-4 h-4 text-luxury-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg> <span>Melbourne-wide service</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================ -->
+<!-- BEFORE/AFTER SLIDER                         -->
+<!-- ============================================ -->
+<section class="bg-luxury-sand py-20 md:py-28 px-6 md:px-12 border-y border-gray-100">
+    <div class="max-w-6xl mx-auto">
+        <div class="text-center mb-12">
+            <div class="flex items-center justify-center gap-2 text-xs font-display font-semibold tracking-[0.3em] text-luxury-gold uppercase mb-3">
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/></svg>
+                <span>See the Difference</span>
+            </div>
+            <h2 class="font-serif text-3xl sm:text-4xl font-extrabold text-luxury-charcoal mb-4">Before & After Staging</h2>
+            <p class="text-sm text-gray-500 font-sans max-w-xl mx-auto leading-relaxed">Drag the slider to see how staging can transform a space.</p>
+        </div>
+
+        <div id="slider-container" class="relative w-full h-[320px] sm:h-[450px] md:h-[550px] overflow-hidden select-none cursor-ew-resize shadow-2xl border-4 border-white rounded-2xl">
+            <!-- AFTER image as full background (right side) -->
+            <img src="https://jsstaging.com.au/wp-content/uploads/2026/06/file_0000000044fc720ba5df270636e48eb6.png"
+            alt="After staging – beautifully furnished room"
+            class="absolute top-0 left-0 w-full h-full object-cover pointer-events-none">
+
+            <div class="absolute top-4 left-4 bg-luxury-charcoal/80 text-luxury-cream text-[10px] tracking-widest uppercase font-display font-semibold px-4 py-1.5 backdrop-blur-sm shadow-sm rounded-full">Before</div>
+
+            <!-- BEFORE image as clipped overlay (left side) -->
+            <div id="after-clip" class="absolute top-0 left-0 h-full overflow-hidden pointer-events-none" style="width: 50%">
+                <div id="after-inner" class="relative w-full h-full">
+                    <img src="https://jsstaging.com.au/wp-content/uploads/2026/06/file_0000000028b4720bae66aa53396ce83c.png"
+                    alt="Before staging – empty room"
+                    class="absolute top-0 left-0 w-full h-full object-cover">
+                </div>
+            </div>
+
+            <div class="absolute top-4 right-4 bg-luxury-gold/90 text-luxury-cream text-[10px] tracking-widest uppercase font-display font-bold px-4 py-1.5 shadow-sm rounded-full">After</div>
+
+            <div id="slider-handle" class="absolute top-0 bottom-0 w-1 bg-white cursor-ew-resize flex items-center justify-center" style="left: 50%">
+                <div class="w-10 h-10 bg-luxury-charcoal text-luxury-gold border-2 border-white rounded-full flex items-center justify-center shadow-lg -translate-x-[18px] transition-transform duration-200">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 9l4-4 4 4m0 6l-4 4-4-4"/></svg>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex justify-between items-center mt-6 text-xs text-gray-500 font-display uppercase tracking-widest px-2">
+            <span>← Drag to compare</span>
+            <span class="hidden sm:inline font-bold text-luxury-gold">Real JS Staging Project</span>
+            <span>See the transformation →</span>
+        </div>
+    </div>
+</section>
+
+<script>
+    (function() {
+        const container = document.getElementById('slider-container');
+        const afterClip = document.getElementById('after-clip');
+        const handle = document.getElementById('slider-handle');
+
+        let isDragging = false;
+
+        function updateSlider(clientX) {
+            const rect = container.getBoundingClientRect();
+            let position = (clientX - rect.left) / rect.width;
+            position = Math.max(0, Math.min(1, position));
+            const percent = position * 100;
+
+            afterClip.style.width = percent + '%';
+            handle.style.left = percent + '%';
+        }
+
+        // Mouse events
+        container.addEventListener('mousedown', function(e) {
+            isDragging = true;
+            updateSlider(e.clientX);
+            document.body.style.userSelect = 'none';
+        });
+
+        window.addEventListener('mousemove', function(e) {
+            if (isDragging) {
+                updateSlider(e.clientX);
+            }
+        });
+
+        window.addEventListener('mouseup', function() {
+            if (isDragging) {
+                isDragging = false;
+                document.body.style.userSelect = '';
+            }
+        });
+
+        // Touch events
+        container.addEventListener('touchstart', function(e) {
+            const touch = e.touches[0];
+            if (touch) {
+                isDragging = true;
+                updateSlider(touch.clientX);
+            }
+        }, { passive: true });
+
+        window.addEventListener('touchmove', function(e) {
+            if (isDragging) {
+                const touch = e.touches[0];
+                if (touch) {
+                    updateSlider(touch.clientX);
+                }
+            }
+        }, { passive: true });
+
+        window.addEventListener('touchend', function() {
+            isDragging = false;
+        });
+
+        // Click on container jumps handle
+        container.addEventListener('click', function(e) {
+            if (e.target.closest('#slider-handle')) return;
+            if (!isDragging) {
+                updateSlider(e.clientX);
+            }
+        });
+
+        // Set initial state (50/50)
+        afterClip.style.width = '50%';
+        handle.style.left = '50%';
+    })();
+    
+</script>
+
+<!-- ============================================ -->
+<!-- SERVICES SECTION                            -->
+<!-- ============================================ -->
+<section id="services" class="bg-luxury-cream py-20 md:py-28 px-6 md:px-12">
+  <div class="max-w-6xl mx-auto">
+    <div class="text-center mb-16 md:mb-20">
+      <div class="flex items-center justify-center gap-2 text-xs font-display font-semibold tracking-[0.3em] text-luxury-gold uppercase mb-3">
+        <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/></svg>
+        <span>What We Offer</span>
+      </div>
+      <h2 class="font-serif text-3xl sm:text-4xl font-extrabold text-luxury-charcoal mb-6 leading-tight">Professional Staging Services <br><span class="text-luxury-gold-dark italic font-normal">for Every Budget</span></h2>
+      <p class="text-sm sm:text-base text-gray-500 font-sans font-light max-w-3xl mx-auto leading-relaxed">We offer flexible staging options to suit your property and your budget. Whether you need a full transformation or just a few finishing touches, we've got you covered.</p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+      <!-- Full Staging -->
+      <div class="bg-white border border-gray-200 relative pt-8 flex flex-col justify-between h-full transition-all duration-500 shadow-sm hover:shadow-xl rounded-2xl overflow-hidden">
+        <div class="px-6 sm:px-8">
+          <div class="h-44 overflow-hidden mb-6 relative group rounded-xl">
+            <img src="https://jsstaging.com.au/wp-content/uploads/2025/10/IMG_1472-1500x430.jpg" srcset="https://jsstaging.com.au/wp-content/uploads/2025/10/IMG_1472-1500x430.jpg 1500w, https://jsstaging.com.au/wp-content/uploads/2025/10/IMG_1472-800x800.jpg 800w" sizes="(max-width: 800px) 100vw, 1500px" loading="lazy" alt="Full home staging – furnished living room" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+          </div>
+          <h3 class="font-serif text-xl font-bold text-luxury-charcoal mb-1">Full Home Staging</h3>
+          <span class="text-[10px] uppercase font-display tracking-widest text-luxury-gold font-bold block mb-4">Complete Transformation</span>
+          <p class="text-xs sm:text-sm text-gray-500 leading-relaxed font-sans font-light mb-6">We bring in all the furniture, art, and accessories to turn your empty home into a warm, inviting space that buyers will love.</p>
+          <button onclick="toggleServiceDetails('full')" class="flex items-center justify-between w-full text-left py-3 border-y border-gray-100 text-xs font-display uppercase tracking-wider font-semibold text-luxury-charcoal hover:text-luxury-gold transition-colors">
+            <span>What's included</span>
+            <svg id="full-icon" class="w-3.5 h-3.5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"/></svg>
+          </button>
+          <div id="full-details" class="hidden overflow-hidden bg-luxury-sand/40 py-4 px-3 mt-2 space-y-2">
+            <div class="flex gap-2 items-start text-[11px] text-gray-600"><svg class="w-3.5 h-3.5 text-luxury-gold-dark mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg><span>Complete furniture supply</span></div>
+            <div class="flex gap-2 items-start text-[11px] text-gray-600"><svg class="w-3.5 h-3.5 text-luxury-gold-dark mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg><span>Styling with art, rugs & accessories</span></div>
+            <div class="flex gap-2 items-start text-[11px] text-gray-600"><svg class="w-3.5 h-3.5 text-luxury-gold-dark mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg><span>Full setup and styling</span></div>
+          </div>
+        </div>
+        <div class="p-6 sm:p-8 mt-6 bg-luxury-sand/30 border-t border-gray-100">
+          <a href="#pricing" class="w-full block text-center py-3 uppercase tracking-widest font-display text-[10px] font-bold rounded-full transition-all duration-300 bg-white hover:bg-luxury-charcoal text-luxury-charcoal hover:text-luxury-cream border border-gray-300 hover:border-luxury-charcoal">
+            View Pricing
+          </a>
+        </div>
+      </div>
+
+      <!-- Partial Staging -->
+      <div class="bg-white border-2 border-luxury-gold ring-4 ring-luxury-gold/5 relative pt-12 flex flex-col justify-between h-full transition-all duration-500 shadow-sm hover:shadow-xl rounded-2xl overflow-hidden md:scale-105">
+        <div class="absolute top-0 left-0 right-0 bg-luxury-gold text-luxury-charcoal text-[9px] font-display font-bold uppercase tracking-widest text-center py-2 flex items-center justify-center gap-1.5">
+          <svg class="w-3 h-3 fill-luxury-charcoal" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+          Most Popular
+        </div>
+        <div class="px-6 sm:px-8">
+          <div class="h-44 overflow-hidden mb-6 relative group rounded-xl">
+            <img src="https://jsstaging.com.au/wp-content/uploads/2025/10/IMG_1580-1500x430.jpg" srcset="https://jsstaging.com.au/wp-content/uploads/2025/10/IMG_1580-1500x430.jpg 1500w, https://jsstaging.com.au/wp-content/uploads/2025/10/IMG_1580-800x800.jpg 800w" sizes="(max-width: 800px) 100vw, 1500px" loading="lazy" alt="Partial staging – stylishly enhanced living room" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+          </div>
+          <h3 class="font-serif text-xl font-bold text-luxury-charcoal mb-1">Partial Staging</h3>
+          <span class="text-[10px] uppercase font-display tracking-widest text-luxury-gold font-bold block mb-4">Enhance What You Have</span>
+          <p class="text-xs sm:text-sm text-gray-500 leading-relaxed font-sans font-light mb-6">We work with your existing furniture and add our stylish pieces to create a cohesive, inviting look without a full overhaul.</p>
+          <button onclick="toggleServiceDetails('partial')" class="flex items-center justify-between w-full text-left py-3 border-y border-gray-100 text-xs font-display uppercase tracking-wider font-semibold text-luxury-charcoal hover:text-luxury-gold transition-colors">
+            <span>What's included</span>
+            <svg id="partial-icon" class="w-3.5 h-3.5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"/></svg>
+          </button>
+          <div id="partial-details" class="hidden overflow-hidden bg-luxury-sand/40 py-4 px-3 mt-2 space-y-2">
+            <div class="flex gap-2 items-start text-[11px] text-gray-600"><svg class="w-3.5 h-3.5 text-luxury-gold-dark mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg><span>Layout & styling advice</span></div>
+            <div class="flex gap-2 items-start text-[11px] text-gray-600"><svg class="w-3.5 h-3.5 text-luxury-gold-dark mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg><span>Accessory & art curation</span></div>
+            <div class="flex gap-2 items-start text-[11px] text-gray-600"><svg class="w-3.5 h-3.5 text-luxury-gold-dark mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg><span>Integration with your furniture</span></div>
+          </div>
+        </div>
+        <div class="p-6 sm:p-8 mt-6 bg-luxury-sand/30 border-t border-gray-100">
+          <a href="#pricing" class="w-full block text-center py-3 uppercase tracking-widest font-display text-[10px] font-bold rounded-full transition-all duration-300 bg-luxury-gold text-white hover:bg-luxury-charcoal">
+            View Pricing
+          </a>
+        </div>
+      </div>
+
+      <!-- Design Consultation -->
+      <div class="bg-white border border-gray-200 relative pt-8 flex flex-col justify-between h-full transition-all duration-500 shadow-sm hover:shadow-xl rounded-2xl overflow-hidden">
+        <div class="px-6 sm:px-8">
+          <div class="h-44 overflow-hidden mb-6 relative group rounded-xl">
+            <img src="https://jsstaging.com.au/wp-content/uploads/2025/10/IMG_1439-1500x430.jpg" srcset="https://jsstaging.com.au/wp-content/uploads/2025/10/IMG_1439-1500x430.jpg 1500w, https://jsstaging.com.au/wp-content/uploads/2025/10/IMG_1439-800x800.jpg 800w" sizes="(max-width: 800px) 100vw, 1500px" loading="lazy" alt="Design consultation – professional assessment" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110">
+          </div>
+          <h3 class="font-serif text-xl font-bold text-luxury-charcoal mb-1">Design Consultation</h3>
+          <span class="text-[10px] uppercase font-display tracking-widest text-luxury-gold font-bold block mb-4">Expert Advice</span>
+          <p class="text-xs sm:text-sm text-gray-500 leading-relaxed font-sans font-light mb-6">Not sure where to start? Our designers will visit your property and give you practical, actionable advice to make it more appealing.</p>
+          <button onclick="toggleServiceDetails('consult')" class="flex items-center justify-between w-full text-left py-3 border-y border-gray-100 text-xs font-display uppercase tracking-wider font-semibold text-luxury-charcoal hover:text-luxury-gold transition-colors">
+            <span>What's included</span>
+            <svg id="consult-icon" class="w-3.5 h-3.5 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"/></svg>
+          </button>
+          <div id="consult-details" class="hidden overflow-hidden bg-luxury-sand/40 py-4 px-3 mt-2 space-y-2">
+            <div class="flex gap-2 items-start text-[11px] text-gray-600"><svg class="w-3.5 h-3.5 text-luxury-gold-dark mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg><span>On-site property assessment</span></div>
+            <div class="flex gap-2 items-start text-[11px] text-gray-600"><svg class="w-3.5 h-3.5 text-luxury-gold-dark mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg><span>Written styling recommendations</span></div>
+          </div>
+        </div>
+        <div class="p-6 sm:p-8 mt-6 bg-luxury-sand/30 border-t border-gray-100">
+          <a href="#pricing" class="w-full block text-center py-3 uppercase tracking-widest font-display text-[10px] font-bold rounded-full transition-all duration-300 bg-white hover:bg-luxury-charcoal text-luxury-charcoal hover:text-luxury-cream border border-gray-300 hover:border-luxury-charcoal">
+            View Pricing
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================ -->
+<!-- PRICING SECTION                             -->
+<!-- ============================================ -->
+<!-- ============================================ -->
+<!-- PRICING SECTION                             -->
+<!-- ============================================ -->
+<section id="pricing" class="bg-luxury-sand py-20 md:py-28 px-6 md:px-12 border-y border-gray-100">
+  <div class="max-w-5xl mx-auto">
+    <div class="text-center mb-16">
+      <div class="flex items-center justify-center gap-2 text-xs font-display font-semibold tracking-[0.3em] text-luxury-gold uppercase mb-3">
+        <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+        <span>Simple Pricing</span>
+      </div>
+      <h2 class="font-serif text-3xl sm:text-4xl font-extrabold text-luxury-charcoal mb-4">Transparent, Affordable Staging</h2>
+      <p class="text-sm text-gray-500 font-sans max-w-2xl mx-auto">No hidden fees. Just honest pricing for professional staging that works.</p>
+    </div>
+
+    <!-- Grid with 2 columns on tablet/desktop, 1 on mobile -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+      
+      <!-- Package 1: 1 Living + 4 Bedrooms -->
+      <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-200 text-center hover:shadow-lg transition-all duration-300">
+        <h3 class="font-display text-sm font-bold uppercase tracking-wider text-luxury-gold">1 Living + 4 Bedrooms</h3>
+        <div class="font-serif text-4xl font-bold text-luxury-charcoal mt-4 mb-2">$2,000</div>
+        <p class="text-xs text-gray-500 mb-6">Full staging for larger homes</p>
+        <ul class="text-left text-xs text-gray-600 space-y-2 mb-6">
+          <li class="flex items-start gap-2">
+            <svg class="w-3.5 h-3.5 text-luxury-gold mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+            <span>Living room furniture & styling</span>
+          </li>
+          <li class="flex items-start gap-2">
+            <svg class="w-3.5 h-3.5 text-luxury-gold mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+            <span>All 4 bedrooms staged</span>
+          </li>
+          <li class="flex items-start gap-2">
+            <svg class="w-3.5 h-3.5 text-luxury-gold mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+            <span>Art, rugs & accessories</span>
+          </li>
+        </ul>
+        <button onclick="openQuoteModal()" class="w-full py-3 bg-luxury-charcoal text-luxury-cream hover:bg-luxury-gold text-xs font-display font-bold uppercase tracking-widest rounded-full transition-all duration-300">Get a Quote</button>
+      </div>
+
+      <!-- Package 2: 1 Living + 1 Bedroom -->
+      <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-200 text-center hover:shadow-lg transition-all duration-300">
+        <h3 class="font-display text-sm font-bold uppercase tracking-wider text-luxury-gold">1 Living + 1 Bedroom</h3>
+        <div class="font-serif text-4xl font-bold text-luxury-charcoal mt-4 mb-2">$1,800</div>
+        <p class="text-xs text-gray-500 mb-6">Perfect for apartments and smaller homes</p>
+        <ul class="text-left text-xs text-gray-600 space-y-2 mb-6">
+          <li class="flex items-start gap-2">
+            <svg class="w-3.5 h-3.5 text-luxury-gold mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+            <span>Stylish living room setup</span>
+          </li>
+          <li class="flex items-start gap-2">
+            <svg class="w-3.5 h-3.5 text-luxury-gold mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+            <span>Bedroom styling & decor</span>
+          </li>
+          <li class="flex items-start gap-2">
+            <svg class="w-3.5 h-3.5 text-luxury-gold mt-0.5 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"/></svg>
+            <span>Flexible, space-saving design</span>
+          </li>
+        </ul>
+        <button onclick="openQuoteModal()" class="w-full py-3 bg-luxury-charcoal text-luxury-cream hover:bg-luxury-gold text-xs font-display font-bold uppercase tracking-widest rounded-full transition-all duration-300">Get a Quote</button>
+      </div>
+
+    </div> <!-- end grid -->
+
+    <p class="text-center text-[10px] text-gray-400 font-sans mt-6">* Prices are indicative. Final quote depends on property size, location and specific requirements.</p>
+  </div>
+</section>
+<!-- ============================================ -->
+<!-- REAL ESTATE AGENTS SECTION                  -->
+<!-- ============================================ -->
+<section id="agents" class="bg-luxury-cream py-20 md:py-28 px-6 md:px-12 relative overflow-hidden">
+  <div class="absolute top-1/2 right-0 -translate-y-1/2 w-[400px] h-[400px] bg-luxury-sand/50 rounded-full blur-3xl pointer-events-none"></div>
+  <div class="max-w-6xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center relative z-10">
+    <div>
+      <div class="flex items-center gap-2 text-xs font-display font-semibold tracking-[0.3em] text-luxury-gold uppercase mb-3">
+        <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 21v-2a4 4 0 00-4-4H9a4 4 0 00-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+        <span>For Real Estate Agents</span>
+      </div>
+      <h2 class="font-serif text-3xl sm:text-4xl font-extrabold text-luxury-charcoal mb-6 leading-tight">Staging That Helps <br><span class="text-luxury-gold-dark italic font-normal">You Sell Faster</span></h2>
+      <p class="text-sm text-gray-600 leading-relaxed font-sans font-light mb-6">We understand the real estate market. Our staging services are designed to help you present properties at their absolute best — making it easier for buyers to say yes.</p>
+
+      <div class="space-y-4">
+        <div class="flex items-start gap-4 p-4 bg-white rounded-xl shadow-sm border border-gray-100">
+          <div class="w-10 h-10 rounded-full bg-luxury-sand flex items-center justify-center flex-shrink-0"><svg class="w-5 h-5 text-luxury-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg></div>
+          <div><h4 class="font-display text-xs font-bold uppercase tracking-wider text-luxury-charcoal">Fast Quotes</h4><p class="text-xs text-gray-500">We respond within 24 hours with a clear, detailed quote.</p></div>
+        </div>
+        <div class="flex items-start gap-4 p-4 bg-white rounded-xl shadow-sm border border-gray-100">
+          <div class="w-10 h-10 rounded-full bg-luxury-sand flex items-center justify-center flex-shrink-0"><svg class="w-5 h-5 text-luxury-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg></div>
+          <div><h4 class="font-display text-xs font-bold uppercase tracking-wider text-luxury-charcoal">Flexible Packages</h4><p class="text-xs text-gray-500">Short-term and long-term staging options to suit any campaign.</p></div>
+        </div>
+        <div class="flex items-start gap-4 p-4 bg-white rounded-xl shadow-sm border border-gray-100">
+          <div class="w-10 h-10 rounded-full bg-luxury-sand flex items-center justify-center flex-shrink-0"><svg class="w-5 h-5 text-luxury-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg></div>
+          <div><h4 class="font-display text-xs font-bold uppercase tracking-wider text-luxury-charcoal">Repeat Business Discount</h4><p class="text-xs text-gray-500">Loyalty discounts for agents who work with us regularly.</p></div>
+        </div>
+      </div>
+      <div class="mt-8">
+        <button onclick="openQuoteModal()" class="flex items-center gap-2 bg-luxury-charcoal hover:bg-luxury-gold text-luxury-cream hover:text-white px-6 py-3 font-display font-bold text-xs uppercase tracking-widest rounded-full transition-all duration-300">
+          Partner with Us
+          <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+        </button>
+      </div>
+    </div>
+    <div class="relative">
+      <div class="shadow-2xl overflow-hidden rounded-2xl border-4 border-white">
+        <img src="https://jsstaging.com.au/wp-content/uploads/2025/10/IMG_1580-scaled.jpg" srcset="https://jsstaging.com.au/wp-content/uploads/2025/10/IMG_1580-scaled.jpg 1200w, https://jsstaging.com.au/wp-content/uploads/2025/10/IMG_1580-800x800.jpg 800w" sizes="(max-width: 800px) 100vw, 1200px" loading="lazy" alt="Staged property by JS Staging" class="w-full h-[350px] object-cover">
+      </div>
+      <div class="absolute -bottom-6 -left-6 bg-white shadow-lg p-4 rounded-xl border-l-4 border-luxury-gold max-w-[200px]">
+        <p class="text-[10px] font-display font-bold uppercase tracking-wider text-luxury-charcoal">Trusted By Agents</p>
+        <p class="text-[10px] text-gray-500">"JS Staging always delivers. Our listings look amazing and sell faster."</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================ -->
+<!-- PORTFOLIO SECTION (with dynamic JS)         -->
+<!-- ============================================ -->
+<section id="portfolio" class="bg-luxury-sand py-20 md:py-28 px-6 md:px-12 border-y border-gray-100">
+  <div class="max-w-6xl mx-auto">
+    <div class="flex flex-col md:flex-row md:items-end md:justify-between mb-12">
+      <div>
+        <div class="flex items-center gap-2 text-xs font-display font-semibold tracking-[0.2em] text-luxury-gold uppercase mb-3">
+          <svg class="w-3.5 h-3.5 text-luxury-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg>
+          <span>Our Work</span>
+        </div>
+        <h2 class="font-serif text-3xl sm:text-4xl font-bold text-luxury-charcoal leading-none">Real Staging Projects</h2>
+        <p class="text-xs sm:text-sm text-gray-500 font-sans font-medium mt-3">See how we've transformed properties across Melbourne.</p>
+      </div>
+      <div class="flex flex-wrap gap-2 mt-6 md:mt-0">
+        <button onclick="filterPortfolio('all')" class="px-4 py-2 font-display text-xs font-bold uppercase tracking-widest rounded-full transition-all duration-300 bg-luxury-charcoal text-luxury-cream shadow-sm">All</button>
+        <button onclick="filterPortfolio('Living Room')" class="px-4 py-2 font-display text-xs font-bold uppercase tracking-widest rounded-full transition-all duration-300 bg-white hover:bg-gray-100 text-luxury-charcoal border border-gray-200">Living Room</button>
+        <button onclick="filterPortfolio('Bedroom')" class="px-4 py-2 font-display text-xs font-bold uppercase tracking-widest rounded-full transition-all duration-300 bg-white hover:bg-gray-100 text-luxury-charcoal border border-gray-200">Bedroom</button>
+		    <button onclick="filterPortfolio('Dining')" class="px-4 py-2 font-display text-xs font-bold uppercase tracking-widest rounded-full transition-all duration-300 bg-white hover:bg-gray-100 text-luxury-charcoal border border-gray-200">Dining</button>
+      </div>
+    </div>
+
+    <div id="portfolio-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      <!-- Populated by JavaScript -->
+    </div>
+  </div>
+</section>
+
+<!-- ============================================ -->
+<!-- TESTIMONIALS                                -->
+<!-- ============================================ -->
+<section id="testimonials" class="bg-luxury-cream py-20 md:py-28 px-6 md:px-12 relative overflow-hidden text-center">
+  <div class="absolute bottom-[-100px] right-[-100px] w-96 h-96 bg-luxury-gold/5 rounded-full blur-3xl pointer-events-none"></div>
+  <div class="max-w-4xl mx-auto">
+    <div class="text-center mb-16 relative">
+      <div class="flex items-center justify-center gap-2 text-xs font-display font-semibold tracking-[0.25em] text-luxury-gold uppercase mb-3">
+        <svg class="w-3.5 h-3.5 text-luxury-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"/></svg>
+        <span>What People Say</span>
+      </div>
+      <h2 class="font-serif text-3xl sm:text-4xl font-bold text-luxury-charcoal">Client & Agent Reviews</h2>
+    </div>
+
+    <div id="testimonial-container" class="bg-white shadow-xl relative border-t-2 border-luxury-gold p-8 sm:p-12 md:p-16 text-center">
+   <?php echo do_shortcode('[trustindex no-registration=google]'); ?>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================================ -->
+<!-- JAVASCRIPT (moved to footer for speed)      -->
+<!-- ============================================ -->
+<script>
+  // Wait for DOM to be ready
+  document.addEventListener('DOMContentLoaded', function() {
+
+    // --- Quote form handler ---
+    window.submitQuoteForm = function(e) {
+      e.preventDefault();
+      // ... your existing logic ...
+      document.getElementById('quote-form').classList.add('hidden');
+      document.getElementById('quote-success').classList.remove('hidden');
+    };
+
+    // --- Service details toggle ---
+    window.toggleServiceDetails = function(service) {
+      const details = document.getElementById(service + '-details');
+      const icon = document.getElementById(service + '-icon');
+      if (details.classList.contains('hidden')) {
+        details.classList.remove('hidden');
+        icon.classList.add('rotate-45');
+      } else {
+        details.classList.add('hidden');
+        icon.classList.remove('rotate-45');
+      }
+    };
+
+    // --- Slider functionality ---
+    const sliderContainer = document.getElementById('slider-container');
+    const afterClip = document.getElementById('after-clip');
+    const handle = document.getElementById('slider-handle');
+    let isDragging = false;
+
+    function updateSlider(x) {
+      const rect = sliderContainer.getBoundingClientRect();
+      let pos = (x - rect.left) / rect.width;
+      pos = Math.min(Math.max(pos, 0), 1);
+      afterClip.style.width = (pos * 100) + '%';
+      handle.style.left = (pos * 100) + '%';
+    }
+
+    sliderContainer.addEventListener('mousedown', function(e) {
+      isDragging = true;
+      updateSlider(e.clientX);
+    });
+    window.addEventListener('mousemove', function(e) {
+      if (isDragging) updateSlider(e.clientX);
+    });
+    window.addEventListener('mouseup', function() {
+      isDragging = false;
+    });
+    sliderContainer.addEventListener('touchstart', function(e) {
+      e.preventDefault();
+      isDragging = true;
+      updateSlider(e.touches[0].clientX);
+    });
+    sliderContainer.addEventListener('touchmove', function(e) {
+      e.preventDefault();
+      if (isDragging) updateSlider(e.touches[0].clientX);
+    });
+    sliderContainer.addEventListener('touchend', function() {
+      isDragging = false;
+    });
+
+    // --- File input label update ---
+    const fileInput = document.getElementById('quote-file');
+    if (fileInput) {
+      fileInput.addEventListener('change', function() {
+        const names = Array.from(this.files).map(f => f.name).join(', ');
+        document.getElementById('file-names').textContent = names ? 'Selected: ' + names : '';
+      });
+    }
+
+    // --- Portfolio data & filtering ---
+    const portfolioItems = [
+      { id: 1, title: 'Modern Living Room', category: 'Living Room', img: 'https://jsstaging.com.au/wp-content/uploads/2026/07/IMG-20260702-WA0023.jpg' },
+		
+      { id: 2, title: ' Bedroom', category: 'Bedroom', img: 'https://jsstaging.com.au/wp-content/uploads/2026/07/IMG-20260702-WA0013.jpg' },
+				{ id: 3, title: 'Elegant Dining', category: 'Dining', img: 'https://jsstaging.com.au/wp-content/uploads/2026/06/file_000000007578720b8e0563b2efdae4d4.jpg.jpeg' },
+		
+		      { id: 4, title: 'Modern Living Room', category: 'Living Room', img: 'https://jsstaging.com.au/wp-content/uploads/2026/07/IMG-20260702-WA0012.jpg' },
+		
+		{ id: 5, title: ' Bedroom', category: 'Bedroom', img: 'https://jsstaging.com.au/wp-content/uploads/2026/07/IMG-20260702-WA0004.jpg' },
+		
+      { id: 6, title: 'Elegant Dining', category: 'Dining', img: 'https://jsstaging.com.au/wp-content/uploads/2026/07/IMG-20260702-WA0015.jpg' },
+
+      // Add more items as needed
+    ];
+
+    const grid = document.getElementById('portfolio-grid');
+
+    function renderPortfolio(category) {
+      const filtered = category === 'all' ? portfolioItems : portfolioItems.filter(item => item.category === category);
+      grid.innerHTML = filtered.map(item => `
+        <div class="group relative overflow-hidden rounded-xl shadow-md bg-white border border-gray-100">
+          <img src="${item.img}" loading="lazy" alt="${item.title}" class="w-full h-60 object-cover transition-transform duration-700 group-hover:scale-105">
+          <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+            <p class="text-white font-display text-xs font-bold uppercase tracking-widest">${item.title}</p>
+          </div>
+        </div>
+      `).join('');
+    }
+
+    window.filterPortfolio = function(category) {
+      renderPortfolio(category);
+      // Update active button style if needed
+      document.querySelectorAll('#portfolio .flex-wrap button').forEach(btn => {
+        btn.classList.remove('bg-luxury-charcoal', 'text-luxury-cream');
+        btn.classList.add('bg-white', 'text-luxury-charcoal');
+      });
+      event.target.classList.remove('bg-white', 'text-luxury-charcoal');
+      event.target.classList.add('bg-luxury-charcoal', 'text-luxury-cream');
+    };
+
+    renderPortfolio('all');
+
+    // --- Testimonials ---
+    const testimonials = [
+      { text: "Our Wollert property looked much larger and brighter after staging. The furniture selection was perfect for the space.Excellent home staging service in Melbourne.Highly recommended.", author: "AYAT A, Homeowner" },
+      { text: "Company did an incredible job staging our home for sale. The space looked beautiful, welcoming and appealing to buyers. Professional, reliable and talented—I highly recommend their servicesThank you so much.", author: "Abrar Maj, Homeowner" },
+      { text: "Professional, reliable and great communication skills! Our craigieburn home looked amazing and modern after staging. We will definitely get in contact if we sell our current home. Thank you again!.", author: "Ella M., Vendor" }
+    ];
+
+    let currentTestimonial = 0;
+    const contentEl = document.getElementById('testimonial-content');
+    const counterEl = document.getElementById('testimonial-counter');
+
+    function showTestimonial(index) {
+      const t = testimonials[index];
+      contentEl.innerHTML = `
+        <p class="text-base sm:text-lg text-gray-700 font-serif italic leading-relaxed">“${t.text}”</p>
+        <p class="text-xs font-display font-bold uppercase tracking-widest text-luxury-gold">— ${t.author}</p>
+      `;
+      counterEl.textContent = `${index + 1} / ${testimonials.length}`;
+    }
+
+    window.nextTestimonial = function() {
+      currentTestimonial = (currentTestimonial + 1) % testimonials.length;
+      showTestimonial(currentTestimonial);
+    };
+
+    window.prevTestimonial = function() {
+      currentTestimonial = (currentTestimonial - 1 + testimonials.length) % testimonials.length;
+      showTestimonial(currentTestimonial);
+    };
+
+    showTestimonial(0);
+
+    // --- Modal placeholder (if you have one) ---
+    window.openQuoteModal = function() {
+      // If you have a modal, show it; otherwise scroll to form
+      document.querySelector('#home .lg\\:col-span-6').scrollIntoView({ behavior: 'smooth' });
+    };
+
+  });
+</script>
+
+
+	<!-- ============================================ -->
+  <!-- FOOTER -->
+  <!-- ============================================ -->
+  <footer class="bg-luxury-charcoal text-luxury-cream pt-16 pb-8 px-6 md:px-12 border-t border-luxury-slate/30 relative">
+    <div class="absolute top-0 right-1/4 w-96 h-96 bg-luxury-gold/5 rounded-full blur-3xl pointer-events-none"></div>
+    
+    <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-12 gap-12 pb-12 border-b border-gray-800">
+      <div class="md:col-span-4 space-y-6">
+        <div class="flex flex-col">
+          <span class="font-serif text-3xl font-extrabold tracking-tight text-white leading-none">JS</span>
+          <span class="text-[9px] tracking-[0.3em] text-luxury-gold font-bold uppercase leading-none mt-1">STAGING</span>
+        </div>
+        <p class="text-xs text-gray-400 font-sans font-light leading-relaxed">
+          Professional home staging services across Melbourne. We help homeowners and agents present properties at their best — simply, affordably, and effectively.
+        </p>
+      </div>
+
+      <div class="md:col-span-2 space-y-4">
+        <h4 class="font-display text-xs font-bold uppercase tracking-widest text-luxury-gold">Services</h4>
+        <ul class="space-y-2 text-xs font-sans font-light text-gray-400">
+          <li><a href="https://jsstaging.com.au/full-property-stagging/" class="hover:text-luxury-gold transition-colors">Full Home Staging</a></li>
+          <li><a href="https://jsstaging.com.au/partial-property-stagging/" class="hover:text-luxury-gold transition-colors">Partial Staging</a></li>
+          <li><a href="https://jsstaging.com.au/personal-styling-service/s" class="hover:text-luxury-gold transition-colors">Personal Styling Service</a></li>
+          <li><a href="#pricing" class="hover:text-luxury-gold transition-colors">Pricing</a></li>
+        </ul>
+      </div>
+
+      <div class="md:col-span-3 space-y-4 text-xs font-sans font-light">
+        <h4 class="font-display text-xs font-bold uppercase tracking-widest text-luxury-gold">Contact</h4>
+        <div class="space-y-3 text-gray-400">
+          <a href="tel:0434363874" class="flex items-center gap-2.5 hover:text-luxury-gold transition-colors block">
+            <svg class="w-4 h-4 text-luxury-gold flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/></svg>
+            <span>00417829971</span>
+          </a>
+          <a href="mailto:enquiries@jsstaging.com.au" class="flex items-center gap-2.5 hover:text-luxury-gold transition-colors block">
+            <svg class="w-4 h-4 text-luxury-gold flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/></svg>
+            <span>info@jsstaging.com.au</span>
+          </a>
+          <div class="flex items-center gap-2.5">
+            <svg class="w-4 h-4 text-luxury-gold flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+            <span>Melbourne, VIC</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="md:col-span-3 space-y-4">
+        <h4 class="font-display text-xs font-bold uppercase tracking-widest text-luxury-gold">Follow Us</h4>
+        <div class="flex items-center gap-5 pt-4">
+          <a href="https://www.facebook.com/people/Js-Staging/61586566207572/?rdid=SCQtaNpGwJPdRCqw&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1PWwFViVsw%2F" target="_blank" rel="noreferrer" class="w-12 h-12 rounded-full bg-gray-800/50 border border-gray-700 flex items-center justify-center text-gray-400 hover:text-luxury-gold hover:border-luxury-gold hover:bg-luxury-gold/10 transition-all duration-300 group">
+            <svg class="w-5 h-5 group-hover:scale-110 transition-transform" fill="currentColor" viewBox="0 0 24 24"><path d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"/></svg>
+          </a>
+          <a href="https://www.instagram.com/js.staging/" target="_blank" rel="noreferrer" class="w-12 h-12 rounded-full bg-gray-800/50 border border-gray-700 flex items-center justify-center text-gray-400 hover:text-luxury-gold hover:border-luxury-gold hover:bg-luxury-gold/10 transition-all duration-300 group">
+            <svg class="w-5 h-5 group-hover:scale-110 transition-transform" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zM12 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+          </a>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="max-w-6xl mx-auto py-6 border-b border-gray-800/60 flex flex-col md:flex-row md:items-center justify-between text-xs text-gray-400 font-sans">
+      <span class="font-display font-semibold uppercase tracking-wider text-luxury-gold mb-2 md:mb-0">Service Areas:</span>
+	
+			
+      <div class="flex flex-wrap gap-x-3 gap-y-2 text-gray-300 font-medium">
+        <span>Craigieburn</span><span>•</span>
+        <span>Mickleham</span><span>•</span>
+        <span>Donnybrook</span><span>•</span>
+        <span>Wollert</span><span>•</span>
+        <span>Epping</span><span>•</span>
+        <span>Greenvale</span><span>•</span>
+        <span>Mernda</span><span>•</span>
+		  <span>Pascoe Vale South</span> <span>•</span>
+		<span>Strathmore</span><span>•</span>
+		<span>Essendon</span><span>•</span>
+		<span>Moonee Ponds</span><span>•</span>
+		<span>Reservoir</span><span>•</span>
+		<span>Preston</span><span>•</span>
+		<span>Coburg</span><span>•</span>
+	   
+		
+      </div>
+    </div>
+
+    <div class="max-w-6xl mx-auto pt-8 flex flex-col sm:flex-row justify-between items-center text-[10px] text-gray-500 uppercase tracking-widest font-display">
+      <span>© 2026 JS Staging. All rights reserved.</span>
+      <div class="flex gap-4 mt-4 sm:mt-0">
+        <span class="hover:text-luxury-gold cursor-pointer transition-colors">Privacy Policy</span>
+        <span>•</span>
+        <span class="hover:text-luxury-gold cursor-pointer transition-colors">Terms</span>
+      </div>
+    </div>
+  </footer>
+  <!-- ============================================ -->
+    <!-- QUOTE MODAL (moved from header) -->
+    <!-- ============================================ -->
+
+
+    <!-- ============================================ -->
+    <!-- FLOATING QUOTES PANEL -->
+    <!-- ============================================ -->
+    <div id="floating-panel" class="fixed bottom-6 right-6 z-40 hidden">
+        <div class="relative">
+            <button onclick="toggleQuotesPanel()" class="flex items-center gap-2 bg-luxury-charcoal text-luxury-cream border-2 border-luxury-gold hover:bg-luxury-gold hover:text-luxury-charcoal px-4 py-3 shadow-2xl font-display uppercase tracking-widest text-xs font-bold transition-all duration-300">
+                <svg class="w-4 h-4 text-luxury-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+                </svg>
+                <span id="quote-count">Quotes (0)</span>
+            </button>
+            <div id="quotes-panel" class="absolute bottom-16 right-0 w-[300px] sm:w-[350px] bg-white shadow-2xl border border-gray-100 p-6 flex flex-col gap-4 border-t-4 border-luxury-gold hidden">
+                <div class="flex justify-between items-center pb-2 border-b border-gray-100">
+                    <span class="font-display font-bold text-xs uppercase tracking-wider">Recent Quotes</span>
+                    <button onclick="toggleQuotesPanel()" class="text-gray-400 hover:text-luxury-charcoal">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                        </svg>
+                    </button>
+                </div>
+                <div id="quotes-list" class="space-y-3 max-h-[250px] overflow-y-auto"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ============================================ -->
+    <!-- SCRIPTS (all your JavaScript) -->
+    <!-- ============================================ -->
+    <script>
+        // Copy all your JavaScript code from the original header's <script> block
+        // (the entire script content from the bottom of your header.php)
+        // Make sure to include all functions and event listeners.
+        // For brevity, I'll include the full code from your paste:
+        
+        // ============================================
+        // DATA
+        // ============================================
+        let activeQuotes = [];
+        let currentTestimonialIndex = 0;
+        let currentFilter = 'all';
+        let isDragging = false;
+
+        const testimonials = [
+            { name: 'Sarah Jenkins', quote: 'JS Staging transformed our family home. It looked amazing and we received multiple offers within a week!', rating: 5 },
+            { name: 'Robert Vance (Agent, Ray White)', quote: 'I\'ve worked with many staging companies, but JS Staging is by far the most reliable and professional. Highly recommend.', rating: 5 },
+            { name: 'Marcus & Claire', quote: 'The team was so easy to work with. They listened to what we wanted and delivered beyond our expectations.', rating: 5 }
+        ];
+
+        const portfolioItems = [
+            { id: 'p1', title: 'Living Room Staging, Craigieburn', category: 'Living Room', image: 'https://jsstaging.com.au/wp-content/uploads/2025/10/IMG_1439-1-scaled.jpg' },
+            { id: 'p2', title: 'Master Suite Styling, Mickleham', category: 'Bedroom', image: 'https://jsstaging.com.au/wp-content/uploads/2025/10/IMG_1301-scaled.jpg' },
+            { id: 'p3', title: 'Contemporary Lounge, Wollert', category: 'Living Room', image: 'https://jsstaging.com.au/wp-content/uploads/2025/10/IMG_1472-1500x430.jpg' },
+            { id: 'p4', title: 'Penthouse Bedroom, Melbourne', category: 'Bedroom', image: 'https://jsstaging.com.au/wp-content/uploads/2025/10/IMG_1514-1500x430.jpg' }
+        ];
+
+        // ============================================
+        // INIT
+        // ============================================
+        function init() {
+            loadQuotesFromStorage();
+            renderPortfolio();
+            renderTestimonials();
+            initSlider();
+            updateQuoteCount();
+            setupFileInputs();
+        }
+
+        // ============================================
+        // FILE INPUT HANDLING
+        // ============================================
+        function setupFileInputs() {
+            const fileInputs = document.querySelectorAll('input[type="file"]');
+            fileInputs.forEach(input => {
+                input.addEventListener('change', function(e) {
+                    const label = this.closest('.file-input-wrapper').querySelector('.file-label');
+                    const count = this.files.length;
+                    if (count > 0) {
+                        const names = Array.from(this.files).map(f => f.name).join(', ');
+                        label.textContent = count + ' file(s) selected';
+                        const parent = this.closest('.file-input-wrapper');
+                        let nameDisplay = parent.querySelector('.file-names-display');
+                        if (!nameDisplay) {
+                            nameDisplay = document.createElement('div');
+                            nameDisplay.className = 'file-names-display text-[10px] text-gray-400 mt-1';
+                            parent.appendChild(nameDisplay);
+                        }
+                        nameDisplay.textContent = names.length > 60 ? names.substring(0, 60) + '...' : names;
+                    } else {
+                        label.textContent = 'Click to upload photos or floor plans';
+                        const parent = this.closest('.file-input-wrapper');
+                        const nameDisplay = parent.querySelector('.file-names-display');
+                        if (nameDisplay) nameDisplay.textContent = '';
+                    }
+                });
+            });
+        }
+
+        // ============================================
+        // QUOTE MANAGEMENT
+        // ============================================
+        function loadQuotesFromStorage() {
+            const saved = localStorage.getItem('js_staging_submits');
+            if (saved) {
+                activeQuotes = JSON.parse(saved);
+                updateQuoteCount();
+                renderQuotesList();
+            }
+        }
+
+        function saveQuotesToStorage() {
+            localStorage.setItem('js_staging_submits', JSON.stringify(activeQuotes));
+            updateQuoteCount();
+            renderQuotesList();
+        }
+
+        function addQuote(quoteData) {
+            const newQuote = {
+                ...quoteData,
+                id: 'quote_' + Date.now(),
+                createdAt: new Date().toLocaleDateString('en-AU', { hour: '2-digit', minute: '2-digit', day: 'numeric', month: 'short' })
+            };
+            activeQuotes = [newQuote, ...activeQuotes];
+            saveQuotesToStorage();
+            showFloatingPanel();
+        }
+
+        function deleteQuote(id) {
+            activeQuotes = activeQuotes.filter(q => q.id !== id);
+            saveQuotesToStorage();
+            if (activeQuotes.length === 0) {
+                document.getElementById('floating-panel').classList.add('hidden');
+            }
+        }
+
+        function updateQuoteCount() {
+            const countSpan = document.getElementById('quote-count');
+            if (countSpan) countSpan.innerText = `Quotes (${activeQuotes.length})`;
+            if (activeQuotes.length > 0) {
+                document.getElementById('floating-panel').classList.remove('hidden');
+            } else {
+                document.getElementById('floating-panel').classList.add('hidden');
+            }
+        }
+
+        function renderQuotesList() {
+            const container = document.getElementById('quotes-list');
+            if (!container) return;
+            if (activeQuotes.length === 0) {
+                container.innerHTML = '<div class="text-xs text-gray-400 text-center py-4">No quotes yet</div>';
+                return;
+            }
+            container.innerHTML = activeQuotes.map(q => `
+                <div class="p-3 bg-luxury-sand text-left text-xs space-y-1 rounded-lg">
+                    <div class="flex justify-between items-start">
+                        <div><div class="font-bold text-luxury-charcoal">${q.name}</div><div class="text-[10px] text-luxury-gold-dark font-semibold uppercase">${q.serviceType || 'Full Staging'}</div></div>
+                        <button onclick="deleteQuote('${q.id}')" class="text-gray-400 hover:text-rose-600">
+                            <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="text-[10px] text-gray-500">${q.email} | ${q.phone}</div>
+                    <div class="text-[9px] text-gray-400">${q.createdAt}</div>
+                </div>
+            `).join('');
+        }
+
+        function showFloatingPanel() {
+            document.getElementById('floating-panel').classList.remove('hidden');
+        }
+
+        function toggleQuotesPanel() {
+            const panel = document.getElementById('quotes-panel');
+            panel.classList.toggle('hidden');
+        }
+
+        // ============================================
+        // FORM SUBMISSIONS
+        // ============================================
+        function submitQuoteForm(event) {
+            event.preventDefault();
+            const fileInput = document.getElementById('quote-file');
+            const files = fileInput.files;
+            const fileNames = files.length > 0 ? Array.from(files).map(f => f.name).join(', ') : 'No files uploaded';
+            
+            const quoteData = {
+                name: document.getElementById('quote-name').value,
+                email: document.getElementById('quote-email').value,
+                phone: document.getElementById('quote-phone').value,
+                serviceType: document.getElementById('quote-service').value,
+                propertyAddress: document.getElementById('quote-address').value,
+                propertySize: document.getElementById('quote-size').value,
+                message: document.getElementById('quote-message').value,
+                files: fileNames
+            };
+            addQuote(quoteData);
+            
+            const form = document.getElementById('quote-form');
+            const successDiv = document.getElementById('quote-success');
+            form.classList.add('hidden');
+            successDiv.classList.remove('hidden');
+            setTimeout(() => {
+                form.classList.remove('hidden');
+                successDiv.classList.add('hidden');
+                form.reset();
+                document.querySelectorAll('.file-names-display').forEach(el => el.textContent = '');
+            }, 4000);
+        }
+
+        function toggleMobileSubmenu(button) {
+            const submenu = button.parentElement.querySelector('#services-submenu');
+            const chevron = button.querySelector('svg');
+            if (submenu) {
+                submenu.classList.toggle('hidden');
+                chevron.classList.toggle('rotate-180');
+            }
+        }
+
+        function submitModalQuote(event) {
+            event.preventDefault();
+            const fileInput = document.getElementById('modal-file');
+            const files = fileInput.files;
+            const fileNames = files.length > 0 ? Array.from(files).map(f => f.name).join(', ') : 'No files uploaded';
+            
+            const quoteData = {
+                name: document.getElementById('modal-name').value,
+                email: document.getElementById('modal-email').value,
+                phone: document.getElementById('modal-phone').value,
+                serviceType: document.getElementById('modal-service').value,
+                propertyAddress: document.getElementById('modal-address').value,
+                propertySize: 'Not specified',
+                message: '',
+                files: fileNames
+            };
+            addQuote(quoteData);
+            closeQuoteModal();
+            alert('Thanks! We\'ll be in touch within 24 hours.');
+        }
+
+        // ============================================
+        // MODAL CONTROLS
+        // ============================================
+        function openQuoteModal() {
+            const modal = document.getElementById('quote-modal');
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeQuoteModal() {
+            const modal = document.getElementById('quote-modal');
+            modal.classList.add('hidden');
+            modal.classList.remove('flex');
+            document.body.style.overflow = '';
+        }
+
+        // ============================================
+        // MOBILE MENU
+        // ============================================
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobile-menu');
+            const overlay = document.getElementById('mobile-overlay');
+            menu.classList.toggle('translate-x-full');
+            overlay.classList.toggle('hidden');
+            document.body.classList.toggle('menu-open');
+        }
+
+        // ============================================
+        // SLIDER
+        // ============================================
+        function initSlider() {
+            const container = document.getElementById('slider-container');
+            const afterClip = document.getElementById('after-clip');
+            const sliderHandle = document.getElementById('slider-handle');
+            const afterInner = document.getElementById('after-inner');
+            
+            if (!container) return;
+            
+            function updateSlider(clientX) {
+                const rect = container.getBoundingClientRect();
+                let x = clientX - rect.left;
+                x = Math.max(0, Math.min(rect.width, x));
+                const percent = (x / rect.width) * 100;
+                afterClip.style.width = percent + '%';
+                sliderHandle.style.left = percent + '%';
+            }
+            
+            function onMouseMove(e) {
+                if (!isDragging) return;
+                updateSlider(e.clientX);
+            }
+            
+            function onTouchMove(e) {
+                if (!isDragging) return;
+                updateSlider(e.touches[0].clientX);
+            }
+            
+            function onMouseUp() {
+                isDragging = false;
+                window.removeEventListener('mousemove', onMouseMove);
+                window.removeEventListener('mouseup', onMouseUp);
+                window.removeEventListener('touchmove', onTouchMove);
+                window.removeEventListener('touchend', onMouseUp);
+            }
+            
+            container.addEventListener('mousedown', (e) => {
+                isDragging = true;
+                updateSlider(e.clientX);
+                window.addEventListener('mousemove', onMouseMove);
+                window.addEventListener('mouseup', onMouseUp);
+            });
+            
+            container.addEventListener('touchstart', (e) => {
+                isDragging = true;
+                updateSlider(e.touches[0].clientX);
+                window.addEventListener('touchmove', onTouchMove);
+                window.addEventListener('touchend', onMouseUp);
+            });
+            
+            if (afterInner) {
+                afterInner.style.width = container.offsetWidth + 'px';
+            }
+            window.addEventListener('resize', () => {
+                if (afterInner) afterInner.style.width = container.offsetWidth + 'px';
+            });
+        }
+
+        // ============================================
+        // SERVICE DETAILS TOGGLE
+        // ============================================
+        function toggleServiceDetails(service) {
+            const details = document.getElementById(`${service}-details`);
+            const icon = document.getElementById(`${service}-icon`);
+            if (details.classList.contains('hidden')) {
+                details.classList.remove('hidden');
+                if (icon) icon.innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M20 12H4"/>';
+            } else {
+                details.classList.add('hidden');
+                if (icon) icon.innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"/>';
+            }
+        }
+
+        // ============================================
+        // PORTFOLIO
+        // ============================================
+        function renderPortfolio() {
+            const grid = document.getElementById('portfolio-grid');
+            if (!grid) return;
+            const filtered = currentFilter === 'all' ? portfolioItems : portfolioItems.filter(item => item.category === currentFilter);
+            grid.innerHTML = filtered.map(item => `
+                <div class="group relative bg-white overflow-hidden shadow-sm hover:shadow-xl border border-gray-100 p-2 cursor-pointer rounded-2xl" onclick="openLightbox('${item.id}')">
+                    <div class="relative h-64 overflow-hidden mb-4 rounded-xl">
+                        <img src="${item.image}" alt="${item.title}" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105">
+                        <div class="absolute top-3 left-3 bg-white/95 text-luxury-charcoal font-display text-[9px] font-bold uppercase tracking-widest px-3 py-1 rounded-full">${item.category}</div>
+                    </div>
+                    <div class="p-4 flex justify-between items-center">
+                        <div><h3 class="font-serif text-base font-bold text-luxury-charcoal group-hover:text-luxury-gold transition-colors">${item.title}</h3></div>
+                        <div class="w-8 h-8 rounded-full border border-gray-200 flex items-center justify-center group-hover:bg-luxury-charcoal">
+                            <svg class="w-4 h-4 text-gray-500 group-hover:text-luxury-gold" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        function filterPortfolio(category) {
+            currentFilter = category;
+            renderPortfolio();
+        }
+
+        function openLightbox(id) {
+            const item = portfolioItems.find(i => i.id === id);
+            if (!item) return;
+            alert(`JS Staging Project: ${item.title}\nCategory: ${item.category}\n\nSee more of our work on our website or contact us for a quote.`);
+        }
+
+        // ============================================
+        // TESTIMONIALS
+        // ============================================
+        function renderTestimonials() {
+            const container = document.getElementById('testimonial-content');
+            const counter = document.getElementById('testimonial-counter');
+            if (!container) return;
+            const t = testimonials[currentTestimonialIndex];
+            container.innerHTML = `
+                <div class="flex justify-center gap-1">${'<svg class="w-4 h-4 fill-luxury-gold text-luxury-gold" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>'.repeat(t.rating)}</div>
+                <p class="font-serif text-lg sm:text-xl md:text-2xl text-luxury-charcoal leading-relaxed max-w-2xl mx-auto font-medium">"${t.quote}"</p>
+                <div class="pt-4 border-t border-gray-100 max-w-xs mx-auto"><span class="font-display text-sm font-bold uppercase tracking-wider text-luxury-charcoal block">${t.name}</span></div>
+            `;
+            if (counter) counter.innerText = `${currentTestimonialIndex + 1} / ${testimonials.length}`;
+        }
+
+        function prevTestimonial() {
+            currentTestimonialIndex = (currentTestimonialIndex - 1 + testimonials.length) % testimonials.length;
+            renderTestimonials();
+        }
+
+        function nextTestimonial() {
+            currentTestimonialIndex = (currentTestimonialIndex + 1) % testimonials.length;
+            renderTestimonials();
+        }
+
+        // ============================================
+        // SCROLL HEADER
+        // ============================================
+        window.addEventListener('scroll', () => {
+            const nav = document.getElementById('main-nav');
+            if (window.scrollY > 20) {
+                nav.classList.add('fixed', 'top-0', 'left-0', 'bg-luxury-cream/95', 'backdrop-blur-md', 'shadow-md', 'py-4');
+                nav.classList.remove('relative', 'py-6');
+            } else {
+                nav.classList.remove('fixed', 'top-0', 'left-0', 'bg-luxury-cream/95', 'backdrop-blur-md', 'shadow-md', 'py-4');
+                nav.classList.add('relative', 'py-6');
+            }
+        });
+
+        // ============================================
+        // GLOBAL EXPOSURE
+        // ============================================
+        window.openQuoteModal = openQuoteModal;
+        window.closeQuoteModal = closeQuoteModal;
+        window.toggleMobileMenu = toggleMobileMenu;
+        window.submitQuoteForm = submitQuoteForm;
+        window.submitModalQuote = submitModalQuote;
+        window.toggleServiceDetails = toggleServiceDetails;
+        window.filterPortfolio = filterPortfolio;
+        window.prevTestimonial = prevTestimonial;
+        window.nextTestimonial = nextTestimonial;
+        window.deleteQuote = deleteQuote;
+        window.toggleQuotesPanel = toggleQuotesPanel;
+
+        document.addEventListener('DOMContentLoaded', init);
+		
+		
+		
+	// ✅ CORRECT WAY — Doesn't break Gravity Forms
+jQuery(document).ready(function($) {
+    // Use Gravity Forms' built-in events
+    $(document).on('gform_post_render', function(event, formId) {
+        if (formId === 5) {
+            // Add custom validation without breaking GF
+            $('#gform_5').on('submit', function(e) {
+                var isValid = true;
+                var firstError = null;
+                
+                $(this).find('.gfield_contains_required input, .gfield_contains_required select, .gfield_contains_required textarea').each(function() {
+                    var $field = $(this);
+                    var val = $field.val().trim();
+                    
+                    if ($field.is('input[type="file"]')) {
+                        if ($field[0].files.length === 0) {
+                            isValid = false;
+                            firstError = $field;
+                            $field.closest('.gfield').addClass('gfield_error');
+                        }
+                    } else if (val === '') {
+                        isValid = false;
+                        firstError = $field;
+                        $field.closest('.gfield').addClass('gfield_error');
+                    } else {
+                        $field.closest('.gfield').removeClass('gfield_error');
+                    }
+                });
+                
+                if (!isValid) {
+                    e.preventDefault();
+                    e.stopPropagation();
+                    alert('Please fill all required fields.');
+                    if (firstError) {
+                        firstError.focus();
+                    }
+                    return false;
+                }
+                // ✅ If valid, let Gravity Forms handle the AJAX submit
+                return true;
+            });
+        }
+    });
+});
+		
+function openUniversalEmail() {
+    // Your email details – customize these!
+    var to = 'info@jsstaging.com.au';
+    var subject = 'Quote Request';
+    var body = 'Hi there,\n\nI would like to request a quote for my project.\n\nPlease find my details below:\n\nName: \nPhone: \nProject details: \n\nThank you.';
+
+    // Create the mailto link
+    var mailtoLink = 'mailto:' + to + '?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+    
+    // 1. Try to open the native mail app (works on Apple, Android, and Windows with Outlook)
+    window.location.href = mailtoLink;
+    
+    // 2. Fallback for Windows/Desktop users who don't have a default mail client
+    // If the user's browser doesn't handle mailto, they will stay on the page.
+    // We wait 600ms, then open Gmail web as a backup.
+    setTimeout(function() {
+        if (document.hasFocus()) {
+            var gmailLink = 'https://mail.google.com/mail/?view=cm&fs=1&to=' + encodeURIComponent(to) + 
+                            '&su=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+            window.open(gmailLink, '_blank');
+        }
+    }, 600);
+}
+
+		
+		
+function openQuoteEmail() {
+    // Email details
+    var to = 'info@jsstaging.com.au';
+    var subject = 'Quote Request';
+    var body = 'Hi there,\n\nI would like to request a quote for my project.\n\nPlease find my details below:\n\nName: \nPhone: \nProject details: \n\nThank you.';
+
+    // Create the mailto link
+    var mailtoLink = 'mailto:' + to + '?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+    
+    // 1️⃣ Try to open the native email app (Apple Mail, Gmail app, Outlook, etc.)
+    window.location.href = mailtoLink;
+    
+    // 2️⃣ FALLBACK: If nothing happens (e.g., Windows without a mail app), open Gmail web in a new tab after 600ms
+    setTimeout(function() {
+        // If the user is still on the page (mailto didn't open anything)
+        if (document.hasFocus()) {
+            var gmailLink = 'https://mail.google.com/mail/?view=cm&fs=1&to=' + encodeURIComponent(to) + 
+                            '&su=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+            window.open(gmailLink, '_blank');
+        }
+    }, 600);
+}
+
+    </script>
+
+    
+
+</body>
+</html>
+
