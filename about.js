@@ -735,3 +735,18 @@
                 }
             }, 600);
         }
+   document.getElementById('quoteBtn').addEventListener('click', function (e) {
+                        var mailtoLink = 'mailto:info@jsstaging.com.au?subject=Free%20Quote%20Request&body=Hi%20there,%0A%0AI%20would%20like%20to%20request%20a%20free%20quote%20for%20my%20project.%0A%0APlease%20find%20my%20details%20below:%0A%0AName:%20%0APhone:%20%0AProject%20details:%20%0A%0AThank%20you.';
+
+                        // Try to open mailto
+                        window.location.href = mailtoLink;
+
+                        // If the browser doesn't handle mailto, we offer a webmail fallback after a short delay
+                        setTimeout(function () {
+                            // If the page is still active (no navigation away from mailto), open Gmail web
+                            if (document.hasFocus()) {
+                                var gmailCompose = 'https://mail.google.com/mail/?view=cm&fs=1&to=info@jsstaging.com.au&su=Free%20Quote%20Request&body=Hi%20there,%0A%0AI%20would%20like%20to%20request%20a%20free%20quote%20for%20my%20project.%0A%0APlease%20find%20my%20details%20below:%0A%0AName:%20%0APhone:%20%0AProject%20details:%20%0A%0AThank%20you.';
+                                window.open(gmailCompose, '_blank');
+                            }
+                        }, 500);
+                    });
