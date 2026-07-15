@@ -499,3 +499,75 @@ function openQuoteEmail() {
         }
     }, 600);
 }
+
+    (function() {
+        const container = document.getElementById('slider-container');
+        const afterClip = document.getElementById('after-clip');
+        const handle = document.getElementById('slider-handle');
+
+        let isDragging = false;
+
+        function updateSlider(clientX) {
+            const rect = container.getBoundingClientRect();
+            let position = (clientX - rect.left) / rect.width;
+            position = Math.max(0, Math.min(1, position));
+            const percent = position * 100;
+
+            afterClip.style.width = percent + '%';
+            handle.style.left = percent + '%';
+        }
+
+        // Mouse events
+        container.addEventListener('mousedown', function(e) {
+            isDragging = true;
+            updateSlider(e.clientX);
+            document.body.style.userSelect = 'none';
+        });
+
+        window.addEventListener('mousemove', function(e) {
+            if (isDragging) {
+                updateSlider(e.clientX);
+            }
+        });
+
+        window.addEventListener('mouseup', function() {
+            if (isDragging) {
+                isDragging = false;
+                document.body.style.userSelect = '';
+            }
+        });
+
+        // Touch events
+        container.addEventListener('touchstart', function(e) {
+            const touch = e.touches[0];
+            if (touch) {
+                isDragging = true;
+                updateSlider(touch.clientX);
+            }
+        }, { passive: true });
+
+        window.addEventListener('touchmove', function(e) {
+            if (isDragging) {
+                const touch = e.touches[0];
+                if (touch) {
+                    updateSlider(touch.clientX);
+                }
+            }
+        }, { passive: true });
+
+        window.addEventListener('touchend', function() {
+            isDragging = false;
+        });
+
+        // Click on container jumps handle
+        container.addEventListener('click', function(e) {
+            if (e.target.closest('#slider-handle')) return;
+            if (!isDragging) {
+                updateSlider(e.clientX);
+            }
+        });
+
+        // Set initial state (50/50)
+        afterClip.style.width = '50%';
+        handle.style.left = '50%';
+    })();
